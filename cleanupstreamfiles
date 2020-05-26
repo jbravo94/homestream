@@ -1,5 +1,5 @@
 #!/bin/bash
-find /var/www/html/streaming -name "*.ts" -type f -mmin +360 -exec rm -f {} \;
+find /var/www/html -name "*.ts" -type f -mmin +360 -exec rm -f {} \;
 echo "Finished cleaning up streaming files."
 
 # Note:
@@ -7,4 +7,3 @@ echo "Finished cleaning up streaming files."
 # 
 # For testing:
 # run-parts -v /etc/cron.hourly
-# http://10.0.0.227/streaming/index.m3u8

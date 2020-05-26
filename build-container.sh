@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker build -t homestream:1.0 .
+docker build -t homestream:1.0 .
