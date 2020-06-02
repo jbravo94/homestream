@@ -26,4 +26,4 @@ RUN chmod +x /root/start.sh
 
 CMD ["/root/start.sh"]
 
-EXPOSE 80
+EXPOSE 80 8081
