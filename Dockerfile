@@ -4,6 +4,8 @@ RUN apt update
 
 RUN apt install -y apache2 vlc ffmpeg
 
+RUN apt install -y cron
+
 RUN useradd -s /bin/sh -d /home/vlc -m vlc
 
 RUN mkdir -p /mnt/media

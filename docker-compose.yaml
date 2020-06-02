@@ -1,9 +1,16 @@
 version: '2'
 services:
-  stream:
+  spongebobstream:
+    image: homestream:1.0
+    ports:
+      - "8868:80"
+      - "8867:8081"  
+    volumes:
+      - /home/johnny/Videos/Spongebob:/mnt/media
+  simpsonsstream:
     image: homestream:1.0
     ports:
       - "8878:80"
-      - "8877:8081"  
+      - "8877:8081"
     volumes:
-      - /home/johnny/Videos:/mnt/media
+      - /home/johnny/Videos/Simpsons:/mnt/media
